@@ -1,0 +1,29 @@
+폴더에다가 pipenv install 입력. 최초 한 번만!
+
+가상환경 제거: pipenv --rm
+가상환경 활성화: pipenv shell
+가상환경 종료: exit
+패키지 설치: pipenv install 패키지이름 ::!!!가상환경에 파이썬 라이브러리가 깔림!!
+패키지 제거: pipenv uninstall 패키지이름
+
+pipenv: 반드시 컴파일 환경을 내가 설정한 가상환경으로 바꿔라!
+
+각 도메인 끝에 robots.txt를 쓰면 각 웹사이트에 규칙을 명시해둔 파일을 볼 수 있음.
+
+크롤링::
+1. 서버가 원하는 정적 HTML 페이지를 내뱉게 만든다. -> by request
+2. 자동으로 움직이는 코드까지 다 짜서 '정적 HTML'파일을 얻어온다. -> by selenium
+3. Open API를 이용한 데이터 접근 및 수집
+
+bs4 사용
+soup.find: 안에 HTML선택자를 넣는다.
+soup.select: 안에 CSS 선택자를 넣는다.
+
+필수헤더(json찾던거)
+
+ACCEPT헤더를 찾아서 채워넣기
+뭐를 필수로 할 지는 모름
+크롤링이 안 되면 헤더를 적절하게 채워봐라!
+
+
+

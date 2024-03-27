@@ -1,0 +1,24 @@
+body{
+    display: flex;
+    width: 400px;
+    justify-content: space-between;
+}
+
+img{
+    flex-grow: 1;
+    border-radius: 1.8em;
+}
+
+.right{
+    padding-left: 20px;
+    flex-grow: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+.right-top{
+    display: flex;
+    justify-content: space-between;
+}
