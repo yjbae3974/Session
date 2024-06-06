@@ -1,4 +1,39 @@
 import React, { useState, useEffect } from "react";
+import styled from "styled-components";
+
+const Form = styled.form`
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+`;
+
+const Input = styled.input`
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+`;
+
+const TextArea = styled.textarea`
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+`;
+
+const Button = styled.button`
+    padding: 10px;
+    font-size: 16px;
+    color: white;
+    background-color: #8D0029;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #7C0019;
+    }
+`;
 
 function PostForm({ addOrUpdatePost, editingPost }) {
     const [title, setTitle] = useState("");
@@ -34,23 +69,23 @@ function PostForm({ addOrUpdatePost, editingPost }) {
     };
 
     return (
-        <form onSubmit={handleSubmit}>
-            <input
+        <Form onSubmit={handleSubmit}>
+            <Input
                 type="text"
                 placeholder="Title"
                 value={title}
                 onChange={(e) => setTitle(e.target.value)}
             />
-            <textarea
+            <TextArea
                 placeholder="Content"
                 value={content}
                 onChange={(e) => setContent(e.target.value)}
             />
-            <input type="file" multiple onChange={handlePictureChange} />
-            <button type="submit">
+            <Input type="file" multiple onChange={handlePictureChange} />
+            <Button primary type="submit">
                 {editingPost ? "Update Post" : "Add Post"}
-            </button>
-        </form>
+            </Button>
+        </Form>
     );
 }
 
