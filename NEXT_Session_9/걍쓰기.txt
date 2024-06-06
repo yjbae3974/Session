@@ -1,0 +1,4 @@
+뭐 안돼?
+1. setting에 myapp을 추가했니?
+2. myapp 추가하고 migration 다시 했니?
+3. admin 페이지에서 수정을 할 수 있게 admin.py를 수정했니?

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Detail</title>
+    </head>
+    <body>
+        <h2>글 제목:</h2>
+        <h3>{{ article.title }}</h3>
+        <h2>글 내용:</h2>
+        <h3>{{ article.content }}</h3>
+        <a href="{% url 'list' %}">list로 돌아가기</a>
+    </body>
+</html>

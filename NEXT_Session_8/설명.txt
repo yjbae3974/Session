@@ -1,0 +1,16 @@
+ORM
+
+RDBMS에서는 SQL이라는 데이터 조작 언어를 기반으로 CRUD를 수행. DJANGO는 파이썬 문법으로 데이터를 쉽게 조작할 수 있도록 ORM을 제공.
+
+DB에 필요한거
+Schema라든가 이것저것..
+
+Model -> 스키마 정의:
+(Only in django)
+긴 글 저장: TextField()
+짧은 글 저장: CharField(max_length = ..)
+파일 저장: FileField()
+시간 저장: DateTimeField()
+ 
+ models.py에 import된 model를 상속받으면,
+ 자동으로 pk(index)를 생성해준다. 
